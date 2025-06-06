@@ -36,7 +36,7 @@ if errorlevel 1 (
 )
 
 if "%~1"=="" (
-    set /p "Arg=[92mPlease provide a commit message: [95m" && echo 
+    set /p "Arg=[92mPlease provide a commit message: [95m" && echo [0m
 ) else (
     set "Arg=%1"
 )
