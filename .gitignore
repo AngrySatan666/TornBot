@@ -2,4 +2,7 @@
 /.what-is-this.md
 .specstory/history
 desktop.ini
-.devcontainer/assets/*
+assets/*.exe
+assets/*.dll
+assets/*.apk
+assets/*.msi

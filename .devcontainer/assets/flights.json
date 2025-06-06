@@ -1,0 +1,302 @@
+{
+    "Mexico": {
+        "flight_path": {
+            "total_time": 13,
+            "minutes_per_day": 110
+        },
+        "profits": {
+            "per_trip": 147000,
+            "daily_max": 12348000
+        },
+        "items": {
+            "AK-47": {"cost": 15000, "sell": 0},
+            "Axe": {"cost": 4200, "sell": 0},
+            "Blank Tokens": {"cost": 100000, "sell": 0},
+            "Bolt Cutters": {"cost": 25, "sell": 0},
+            "Bottle of Tequila": {"cost": 85, "sell": 0},
+            "Card Skimmer": {"cost": 175, "sell": 0},
+            "Claymore Mine": {"cost": 15000, "sell": 0},
+            "Cobra Derringer": {"cost": 70000, "sell": 0},
+            "Crazy Straw": {"cost": 25, "sell": 0},
+            "Dahlia": {"cost": 300, "sell": 0},
+            "Desert Eagle": {"cost": 45000, "sell": 0},
+            "Flak Jacket": {"cost": 7500, "sell": 0},
+            "Flare Gun": {"cost": 300, "sell": 0},
+            "Heckler & Koch SL8": {"cost": 45000, "sell": 0},
+            "Jaguar Plushies": {"cost": 10000, "sell": 0},
+            "Kevlar Gloves": {"cost": 400000, "sell": 0},
+            "Leather Bullwhip": {"cost": 1500, "sell": 0},
+            "M249 SAW": {"cost": 950000, "sell": 0},
+            "Mayan Statue": {"cost": 500, "sell": 0},
+            "Minigun": {"cost": 3000000, "sell": 0},
+            "Ninja Claws": {"cost": 8000, "sell": 0},
+            "Outer Tactical Vest": {"cost": 1000000, "sell": 0},
+            "Samurai Sword": {"cost": 75000, "sell": 0},
+            "Springfield 1911-A1": {"cost": 430, "sell": 0},
+            "Taser": {"cost": 5500, "sell": 0},
+            "Trench Coat": {"cost": 500000, "sell": 0},
+            "Yucca Plant": {"cost": 20000, "sell": 0},
+            "9mm Uzi": {"cost": 1100000, "sell": 0},
+            "ArmaLite M-15A4 Rifle": {"cost": 20000000, "sell": 0}
+        }
+    },
+    "Cayman Islands": {
+        "flight_path": {
+            "total_time": 17,
+            "minutes_per_day": 125
+        },
+        "profits": {
+            "per_trip": 0,
+            "daily_max": 0
+        },
+        "items": {
+            "Banana Orchid": {"cost": 4000, "sell": 0},
+            "Bikini": {"cost": 8000, "sell": 0},
+            "Diamond Bladed Knife": {"cost": 950000, "sell": 0},
+            "Diving Gloves": {"cost": 5000, "sell": 0},
+            "Flippers": {"cost": 10000, "sell": 0},
+            "Harpoon": {"cost": 300000, "sell": 0},
+            "Naval Cutlass": {"cost": 50000000, "sell": 0},
+            "Nodding Turtle": {"cost": 750, "sell": 0},
+            "Snorkel": {"cost": 20000, "sell": 0},
+            "Speedo": {"cost": 6000, "sell": 0},
+            "Steel Drum": {"cost": 1500, "sell": 0},
+            "Stingray Plushie": {"cost": 400, "sell": 0},
+            "Tavor TAR-21": {"cost": 495000, "sell": 0},
+            "Trout": {"cost": 10000, "sell": 0},
+            "Wetsuit": {"cost": 30000, "sell": 0}
+        }
+    },
+    "Canada": {
+        "flight_path": {
+            "total_time": 19,
+            "minutes_per_day": 135
+        },
+        "profits": {
+            "per_trip": 0,
+            "daily_max": 0
+        },
+        "items": {
+            "Aluminum Plate": {"cost": 1125, "sell": 0},
+            "Crocus": {"cost": 600, "sell": 0},
+            "Fire Hydrant": {"cost": 20000, "sell": 0},
+            "Hockey Stick": {"cost": 400, "sell": 0},
+            "Ice Pick": {"cost": 20000, "sell": 0},
+            "Ithaca 37": {"cost": 10000, "sell": 0},
+            "Lorcin 380": {"cost": 300, "sell": 0},
+            "Mountie Hat": {"cost": 30000, "sell": 0},
+            "PVC Cards": {"cost": 12500, "sell": 0},
+            "Safety Boots": {"cost": 77000, "sell": 0},
+            "Wolverine Plushie": {"cost": 30, "sell": 0},
+            "Cannabis": {"cost": "Changes Daily", "sell": 0},
+            "Ecstasy": {"cost": "Changes Daily", "sell": 0},
+            "PCP": {"cost": "Changes Daily", "sell": 0},
+            "Vicodin": {"cost": "Changes Daily", "sell": 0},
+            "Xanax": {"cost": "Changes Daily", "sell": 0}
+        }
+    },
+    "Hawaii": {
+        "flight_path": {
+            "total_time": 61,
+            "minutes_per_day": 500
+        },
+        "profits": {
+            "per_trip": 0,
+            "daily_max": 0
+        },
+        "items": {
+            "Bushmaster Carbon 15 Type 21s": {"cost": 15000, "sell": 0},
+            "Coconut Bra": {"cost": 750000, "sell": 0},
+            "HEG": {"cost": 20000, "sell": 0},
+            "Large Suitcase": {"cost": 10000000, "sell": 0},
+            "Medium Suitcase": {"cost": 4000000, "sell": 0},
+            "Orchid": {"cost": 700, "sell": 0},
+            "Pele Charm": {"cost": 2000, "sell": 0},
+            "Small Suitcase": {"cost": 2000000, "sell": 0},
+            "Taurus": {"cost": 650, "sell": 0},
+            "Type 98 Anti Tank": {"cost": 25000000, "sell": 0}
+        }
+    },
+    "United Kingdom": {
+        "flight_path": {
+            "total_time": 73,
+            "minutes_per_day": 520
+        },
+        "profits": {
+            "per_trip": 0,
+            "daily_max": 0
+        },
+        "items": {
+            "Claymore Sword": {"cost": 100000, "sell": 0},
+            "Crossbow": {"cost": 900, "sell": 0},
+            "Cricket Bat": {"cost": 15000, "sell": 0},
+            "Dart Board": {"cost": 750, "sell": 0},
+            "Dog Treats": {"cost": 25, "sell": 0},
+            "Enfield SA-80": {"cost": 250000, "sell": 0},
+            "Flail": {"cost": 8000000, "sell": 0},
+            "Frying Pan": {"cost": 400, "sell": 0},
+            "Grenade": {"cost": 10000, "sell": 0},
+            "Heather": {"cost": 5000, "sell": 0},
+            "Inkwell": {"cost": 375, "sell": 0},
+            "Model Space Ship": {"cost": 17500, "sell": 0},
+            "Nessie Plushie": {"cost": 200, "sell": 0},
+            "Paper Weight": {"cost": 1500, "sell": 0},
+            "Red Fox Plushie": {"cost": 1000, "sell": 0},
+            "Sextant": {"cost": 25000, "sell": 0},
+            "Ship in a Bottle": {"cost": 40000, "sell": 0},
+            "Stick Grenade": {"cost": 8000, "sell": 0},
+            "Tailors Dummy": {"cost": 10000, "sell": 0},
+            "WWII Helmet": {"cost": 89500, "sell": 0},
+            "Cannabis": {"cost": "Changes Daily", "sell": 0},
+            "Ecstasy": {"cost": "Changes Daily", "sell": 0},
+            "PCP": {"cost": "Changes Daily", "sell": 0},
+            "Shrooms": {"cost": "Changes Daily", "sell": 0},
+            "Vicodin": {"cost": "Changes Daily", "sell": 0},
+            "Xanax": {"cost": "Changes Daily", "sell": 0}
+        }
+    },
+    "Argentina": {
+        "flight_path": {
+            "total_time": 75,
+            "minutes_per_day": 535
+        },
+        "profits": {
+            "per_trip": 0,
+            "daily_max": 0
+        },
+        "items": {
+            "Ceibo Flower": {"cost": 500, "sell": 0},
+            "Compass": {"cost": 2500, "sell": 0},
+            "Flamethrower": {"cost": 3000000, "sell": 0},
+            "Liquid Body Armor": {"cost": 7500000, "sell": 0},
+            "Macana": {"cost": 100000, "sell": 0},
+            "Monkey Plushie": {"cost": 400, "sell": 0},
+            "Soccer Ball": {"cost": 50, "sell": 0},
+            "Tear Gas": {"cost": 15000, "sell": 0},
+            "Throwing Knife": {"cost": 35000, "sell": 0},
+            "Cannabis": {"cost": "Changes Daily", "sell": 0},
+            "Ketamine": {"cost": "Changes Daily", "sell": 0},
+            "LSD": {"cost": "Changes Daily", "sell": 0},
+            "Shrooms": {"cost": "Changes Daily", "sell": 0},
+            "Speed": {"cost": "Changes Daily", "sell": 0}
+        }
+    },
+    "Switzerland": {
+        "flight_path": {
+            "total_time": 79,
+            "minutes_per_day": 570
+        },
+        "profits": {
+            "per_trip": 0,
+            "daily_max": 0
+        },
+        "items": {
+            "Cannabis": {"cost": "Changes Daily", "sell": 0},
+            "Chamois Plushie": {"cost": 400, "sell": 0},
+            "Dozen White Roses": {"cost": 950000000, "sell": 0},
+            "Edelweiss": {"cost": 900, "sell": 0},
+            "Flash Grenade": {"cost": 12000, "sell": 0},
+            "Jackhammer": {"cost": 5000000, "sell": 0},
+            "Ketamine": {"cost": "Changes Daily", "sell": 0},
+            "LSD": {"cost": "Changes Daily", "sell": 0},
+            "Neumune Tablet": {"cost": 6500000, "sell": 0},
+            "PCP": {"cost": "Changes Daily", "sell": 0},
+            "Shrooms": {"cost": "Changes Daily", "sell": 0},
+            "SIG 552": {"cost": 7500000, "sell": 0},
+            "Snowboard": {"cost": 6000, "sell": 0},
+            "Speed": {"cost": "Changes Daily", "sell": 0},
+            "Swiss Army Knife": {"cost": 2500, "sell": 0}
+        }
+    },
+    "Japan": {
+        "flight_path": {
+            "total_time": 103,
+            "minutes_per_day": 820
+        },
+        "profits": {
+            "per_trip": 0,
+            "daily_max": 0
+        },
+        "items": {
+            "BT MP9": {"cost": 55000, "sell": 0},
+            "Bottle of Saké": {"cost": 39, "sell": 0},
+            "Chain Whip": {"cost": 2500, "sell": 0},
+            "Cherry Blossom": {"cost": 500, "sell": 0},
+            "Chopsticks": {"cost": 25, "sell": 0},
+            "Ecstasy": {"cost": "Changes Daily", "sell": 0},
+            "Flexible Body Armor": {"cost": 15000000, "sell": 0},
+            "Glow Stick": {"cost": 10, "sell": 0},
+            "Kabuki Mask": {"cost": 10000, "sell": 0},
+            "Kama": {"cost": 50000, "sell": 0},
+            "Ketamine": {"cost": "Changes Daily", "sell": 0},
+            "Kodachi": {"cost": 95000, "sell": 0},
+            "Maneki Neko": {"cost": 50000, "sell": 0},
+            "Metal Nunchakus": {"cost": 400000, "sell": 0},
+            "Ninja Stars": {"cost": 500, "sell": 0},
+            "Opium": {"cost": "Changes Daily", "sell": 0},
+            "Sai": {"cost": 1000, "sell": 0},
+            "Sensu": {"cost": 500, "sell": 0},
+            "Shrooms": {"cost": "Changes Daily", "sell": 0},
+            "Speed": {"cost": "Changes Daily", "sell": 0},
+            "Sumo Doll": {"cost": 300, "sell": 0},
+            "Vicodin": {"cost": "Changes Daily", "sell": 0},
+            "Wooden Nunchakus": {"cost": 5000, "sell": 0},
+            "Xanax": {"cost": "Changes Daily", "sell": 0},
+            "Yakitori Lantern": {"cost": 4500, "sell": 0}
+        }
+    },
+    "United Arab Emirates": {
+        "flight_path": {
+            "total_time": 123,
+            "minutes_per_day": 960
+        },
+        "profits": {
+            "per_trip": 0,
+            "daily_max": 0
+        },
+        "items": {
+            "Camel Plushie": {"cost": 14000, "sell": 0},
+            "Digital Organizer": {"cost": 12000000000, "sell": 0},
+            "Gold Laptop": {"cost": 8000000000, "sell": 0},
+            "Gold Plated AK-47": {"cost": 25000000000, "sell": 0},
+            "Handbag": {"cost": 16000000000, "sell": 0},
+            "Pillow": {"cost": 10000000, "sell": 0},
+            "Pink Mac-10": {"cost": 23000000000, "sell": 0},
+            "Proda Sunglasses": {"cost": 100000, "sell": 0},
+            "Sports Shades": {"cost": 10000, "sell": 0},
+            "Sports Sneakers": {"cost": 14000000000, "sell": 0},
+            "Tribulus Omanense": {"cost": 6000, "sell": 0}
+        }
+    },
+    "South Africa": {
+        "flight_path": {
+            "total_time": 135,
+            "minutes_per_day": 1080
+        },
+        "profits": {
+            "per_trip": 0,
+            "daily_max": 0
+        },
+        "items": {
+            "African Violet": {"cost": 2000, "sell": 0},
+            "Afro Comb": {"cost": 50000, "sell": 0},
+            "Combat Boots": {"cost": 2400000, "sell": 0},
+            "Combat Gloves": {"cost": 2100000, "sell": 0},
+            "Combat Helmet": {"cost": 3100000, "sell": 0},
+            "Combat Pants": {"cost": 2950000, "sell": 0},
+            "Combat Vest": {"cost": 3500000, "sell": 0},
+            "Elephant Statue": {"cost": 500, "sell": 0},
+            "Knuckle Dusters": {"cost": 750, "sell": 0},
+            "Lion Plushie": {"cost": 400, "sell": 0},
+            "LSD": {"cost": "Changes Daily", "sell": 0},
+            "Mag 7": {"cost": 60000, "sell": 0},
+            "Opium": {"cost": "Changes Daily", "sell": 0},
+            "PCP": {"cost": "Changes Daily", "sell": 0},
+            "Shrooms": {"cost": "Changes Daily", "sell": 0},
+            "Smoke Grenade": {"cost": 20000, "sell": 0},
+            "Spear": {"cost": 600, "sell": 0},
+            "Vektor CR-21": {"cost": 7500, "sell": 0},
+            "Xanax": {"cost": "Changes Daily", "sell": 0}
+        }
+    }
+}

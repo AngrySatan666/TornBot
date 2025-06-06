@@ -1,0 +1,148 @@
+// #! Non-Script
+{
+    "Torn" : {
+        "url" : "https://www.torn.com/",
+        "City": {
+            "Map" : "https://www.torn.com/city.php#map-cont",
+            "Links" : "https://www.torn.com/city.php#quick-links",
+            "LoanShark" : "https://www.torn.com/loan.php",
+            "Museum" : "https://www.torn.com/museum.php",
+            "Racing" : "https://www.torn.com/loader.php?sid=racing",
+            "Missions" : "https://www.torn.com/loader.php?sid=missions",
+            "Hospital" : "https://www.torn.com/hospitalview.php",
+            "Dump" : "https://www.torn.com/dump.php",
+            "Jail" : "https://www.torn.com/jailview.php",
+            "Bank" : "https://www.torn.com/bank.php",
+            "Church" : "https://www.torn.com/church.php",
+            "Casino" : {
+                "Base" : "https://www.torn.com/casino.php",
+                "url" : "https://www.torn.com/page.php?sid={game}",
+                "game" : ["slots", "roulette", "higlow", "keno", "craps", "bookie", "lottery", "blackjack", "holdem", "russianRoulette#/", "spinTheWheel"]
+            },
+            "education" : {
+                "Base" : "https://www.torn.com/page.php?sid=education#/step=main",
+                "url" : "https://www.torn.com/page.php?sid=education&category={categ}&course={crs}#/step=main",
+                "categ" : [{"Biology" : 4}, {"Buisness" : 1}, {"Combat Training" : 9}, {"Computer Science" : 6}, {"General Studies" : 12}, {"Health & Fitness" : 11}, {"History" : 2}, {"Law" : 10}, {"Mathematics" : 3}, {"Psychology" : 7}, {"Self Defense" : 8}, {"Sports Science" : 5}],
+                "crs" : [{"Business" : [1, 13]}, {"History" : [14, 21]}, {"Mathematics" : [22, 33]}, {"Biology" : [34, 42]}, {"Sports Science" : [43, 51]}, {"Computer Science" : [52, 62]},  {"Psychology" : [63, 69]},  {"Self Defense" : [70, 77]},  {"Combat Training" : [78, 87]},  {"Law" : [88, 102]},  {"Health & Fitness" : [103, 111]}, {"General Studies" : [112, 121]}]
+            }
+        },
+        "Crimes" : {
+            "Url" : "https://www.torn.com/loader.php?sid=crimes#/{crime}",
+            "crimes" : ["searchforcash", "bootlegging", "graffiti", "shoplifting", "pickpocketing", "cardsmkimming", "burglary", "hustling", "disposal", "cracking", "forgery", "scamming"]
+        },
+        "Faction": {
+            "base" : "https://www.torn.com/factions.php?step=your&type={news}#/",
+            "url" : "https://www.torn.com/factions.php?step=your&type={news}#/tab={tabs}",
+            "news" : [{"1" : "Main News"}, {"2" : "Attacking"}, {"3" : "Funds"}, {"4" : "Armory"}, {"6" : "Chain Report"}, {"7" : "Crimes"}, {"8" : "Membership"}, {"9" : "Faction Items"}],
+            "tabs" : ["info", "territory", "rank", "crimes", "upgrades", "armoury", "controls&options={ops}"],
+            "ops":["newsletter", "application", "members", "positions"]
+        },
+        "Item-Market": {
+            "Bazaars" : "https://www.torn.com/page.php?sid=bazaar",
+            "url" : "https://www.torn.com/page.php?sid=ItemMarket#/market/view=category&categoryName={categs}",
+            "categs" : ["Most%20Popular", "Temporary", "Medical", "Drug", "Energy%20Drink", "Alcohol", "Candy", "Booster", "Enhancer", "Special", "Tool", "Material", "Supply%20Pack", "Clothing", "Jewelry", "Flower", "Plushie", "Artifact", "Collectible", "Other", "Melee&sortField={filters}&sortOrder={order}", "Primary&sortField={filters}&sortOrder={order}", "Car&carSort={sort}"],
+            "filters": [{"Weapons" : ["price", "damage", "accuracy", "quality"]}, {"Armor": ["price", "armor", "quality"]}],
+            "order" : ["ASC", "DESC"],
+            "sort" : ["topspeed", "acceleration", "braking", "handling", "dirt", "tarmac", "safety" ]
+        },
+        "Job": {
+            "url" : "https://www.torn.com/companies.php?step=your&type={types}#/option={ops}",
+            "types" : [{"Main" : 1}, {"Funds" : 2}, {"Training" : 3}, {"Employees" : 4}],
+            "ops" : ["income-chart", "pricing", "upgrades", "employees", "stock", "edit-profile", "company-positions", "advertising", "change-director", "applications", "funds", "sell-company"]
+        },
+        "Others" : {
+            "Profile" : "https://www.torn.com/profiles.php?XID={ID}",
+            "Message" : "https://www.torn.com/messages.php#/p=compose&XID={ID}",
+            "Bounty" : "https://www.torn.com/bounties.php?p=add&XID={ID}",
+            "Compare" : {
+                "url" : "https://www.torn.com/personalstats.php?ID={MYID},{ID}&stats={stat,stat,stat,etc}&from={time}",
+                "stat" : ["useractivity", "attackswon", "attackslost", "attacksdraw", "attacksassisted", "defendswon", "defendslost", "defendsstalemate", "elo", "yourunaway", "theyrunaway", "unarmoredwon", "killstreak", "bestkillstreak", "attackhits", "attackmisses", "attackdamage", "bestdamage", "onehitkills", "attackcriticalhits", "roundsfired", "specialammoused", "hollowammoused", "tracerammoused", "piercingammoused", "incendiaryammoused", "attacksstealthed", "retals", "moneymugged", "largestmug", "itemslooted", "highestbeaten", "respectforfaction", "raidhits", "territoryjoins", "territoryclears", "territorytime", "jobpointsused", "trainsrecived", "itemsbought", "auctionswon", "auctionsells", "itemsent", "trades", "cityitemsbought", "pointsbought", "pointssold", "bazaarcustomers", "bazaarsales", "bazaarprofit", "itemmarketcustomers", "itemmarketsales", "itemmarketrevenue", "itemmarketfees", "jailed", "peoplebusted", "failedbusts", "peoplebought", "peopleboughtspent", "hospital", "medicalitemsused", "bloodwithdrawn", "reviveskill", "revives", "revivesrecieved", "heahits", "machits", "rifhits", "smghits", "shohits", "pishits", "grehits", "piehits", "slahits", "axehits", "chahits", "booksread", "boostersused", "consumablesused", "candyused", "alcoholused", "energydrinksused", "statenhancersused", "traveltimes", "traveltime", "missionscompleted", "contractscompleted", "drugsused", "overdose", "rehabs", "rehabcost", "cantaken", "exttaken", "kettaken", "lsdtaken", "opitaken", "pcptaken", "shrtaken", "spetaken", "victaken", "xanax", "refils", "nerverefills", "tokenrefills", "awards", "meritsbought", "daysbeendonator", ""],
+                "time" : ["1%20month", "3%20months", "6%20months", "1%20year", "5%20years", "al"]
+            }
+        },
+        "Personal" : {
+            "Vault" : "https://www.torn.com/properties.php#/p=options&tab=vault",
+            "AirStrip" : "https://www.torn.com/page.php?sid=travel",
+            "Gym" : "https://www.torn.com/gym.php",
+            "Items" : "https://www.torn.com/item.php",
+            "Images" : "https://www.torn.com/page.php?sid=gallery&XID=2353731",
+            "Targets" : "https://www.torn.com/page.php?sid=list&type=targets",
+            "Report" : "https://www.torn.com/page.php?sid=report&userID={ID}#/add",
+            "Bazaar" : "https://www.torn.com/page.php?sid=report&userID={ID}#/add",
+            "Display" : "https://www.torn.com/displaycase.php#display/{ID}"
+        },
+        "Points" : {
+            "Building" : "https://www.torn.com/page.php?sid=points",
+            "Market" : "https://www.torn.com/pmarket.php"
+        },
+        "Shops" : {
+            "BigAlsGunShop" : "https://www.torn.com/bigalgunshop.php",
+            "Url" : "https://www.torn.com/shops.php?step={shop}",
+            "shops" : ["bitsnbobs", "cyberforce", "docks", "jewelry", "nikeh", "pawnshop", "pharmacy", "postoffice", "printstore", "recyclingcenter", "super", "candy", "clothes"]
+        },
+        "Stocks": {
+            "base" : "https://www.torn.com/page.php?sid=stocks",
+            "url" : "https://www.torn.com/page.php?sid=stocks&stockID{symbol}&tab={tabs}",
+            "symbols" : [2, 1, 15, 10, 30, 29, 16, 3, 28, 1, 24, 17, 3, 26, 13, 27, 4, 33, 7, 32, 9, 21, 6, 20, 19, 22, 11, 12, 5, 23, 14, 34, 25, 35, 9],
+            "tabs" : ["name", "price&period={chart}", "owned", "dividend" ],
+            "charts" : ["hour", "day", "week", "month", "year", "all"]
+        },
+        "Settings" : {
+            "url" : "https://www.torn.com/preferences.php#tab={tabs}",
+            "tabs" : ["settings", "security", "attack-preferences", "your-icons", "navigation-settings", "email-subscriptions", "api", "name", "email", "password", "sex-change", "profile-signature", "forum-signature", "personal-details", "your-images", "casino-self-exclusion"]
+        }
+    },
+    "Api" : {
+        "User" : {
+            "bars" : {
+                "url" : "https://api.torn.com/user/{ID}?selections=bars&key={key}",
+                "returns" : ["energy", "nerve", "happy", "life", "chain"]
+            },
+            "basic" : {
+                "url" : "https://api.torn.com/user/{ID}?selections=basic&key={key}",
+                "returns" : ["level", "gender", "ID", "name", "status"]
+            },
+            "cooldowns" : {
+                "url" : "https://api.torn.com/user/?selections=cooldowns&key={key}",
+                "returns" : ["drug", "booster", "medical"]
+            },
+            "money" : {
+                "url" : "https://api.torn.com/user/?selections=money&key={key}",
+                "returns" : ["points", "cayman", "vault", "company", "dailyNet", "onHand", "cityBank"]
+            },
+            "newevents" : {
+                "url" : "https://api.torn.com/user/?selections=newevents&key="
+            },
+            "profile" : {
+                "url" : "https://api.torn.com/user/{ID}?selections=profile&key={key}",
+                "returns" : ["INDEPTH", "PLAYER", "DATA"]
+            },
+            "refills" : {
+                "url" : "https://api.torn.com/user/?selections=refills&key={key}",
+                "returns" : ["dailyenergy", "dailynerve", "dailytoken", "dailyspecial"]
+            },
+            "weaponexp" : {
+                "url" : "https://api.torn.com/user/?selections=weaponexp&key={key}",
+                "returns" : ["ItemID", "ItemName", "exp%"]
+            }
+
+        },
+        "Faction": {},
+        "Market" : {
+            "pointsmarket" : {
+                "url" : "https://api.torn.com/market/?selections=pointsmarket&key={key}",
+                "returns" : ["cost", "quantity", "price"]
+            }
+        },
+        "Torn" : {},
+        "" : {}
+    },
+    "Extras" : {
+        "ArsonWareHouse" : "https://arsonwarehouse.com/",
+        "TornStats" : "https://tornstats.com/",
+        "Yata": "https://yata.yt/",
+        "Tornsy" : "https://tornsy.com/tcse",
+        "Report" : "https://torn.report/",
+        "Exchange" : "https://www.tornexchange.com/"
+    }
+}
