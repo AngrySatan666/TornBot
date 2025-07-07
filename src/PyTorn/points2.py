@@ -6,6 +6,7 @@ import json
 import os
 import time
 from datetime import datetime
+import argparse
 
 DIR = os.path.dirname(os.path.abspath(__file__))
 Dat_DIR = os.path.join (DIR, "data")
@@ -26,33 +27,39 @@ API_URL = f"https://api.torn.com/market/?selections=pointsmarket&key={key}"
 Curl = f"curl -X 'GET' 'https://api.torn.com/v2/market?selections=pointsmarket' -H 'accept: application/json' -H 'Authorization: ApiKey {key}'"
 
 def fetch_points_market():
-    print("\n[DEBUG] Fetching Points Market Data...")
-    
+    if bugs == True:
+        print("\n[DEBUG] Fetching Points Market Data...")
+
     try:
         response = requests.get(API_URL)
         response.raise_for_status()
         market_data = response.json()
-        print("[DEBUG] API Call Successful. Processing Data...")
+        if bugs == True:
+            print("[DEBUG] API Call Successful. Processing Data...")
         if "pointsmarket" in market_data:
             listings = market_data["pointsmarket"]
-            print(f"[DEBUG] Received {len(listings)} listings.")
+            if bugs == True:
+                print(f"[DEBUG] Received {len(listings)} listings.")
+            highest_price = max([listing["cost"] for listing in listings.values()])
             lowest_price = min([listing["cost"] for listing in listings.values()])
             total_volume = sum([listing["quantity"] for listing in listings.values()])
             market_cap = sum([listing["total_cost"] for listing in listings.values()])
             average_price = round(market_cap / total_volume, 2) if total_volume > 0 else 0
             timestamp = datetime.now()
-            time_key = timestamp.strftime("%H_%M")
+            time_key = timestamp.strftime("%H:%M:%S")
             date_str = timestamp.strftime("%Y-%m-%d")
-            print(f"[DEBUG] Extracted Data -> Lowest: {lowest_price}, Volume: {total_volume}, Market Cap: {market_cap}, Avg: {average_price}")
+            if bugs == True:
+                print(f"[DEBUG] Extracted Data -> Lowest: {lowest_price}, Volume: {total_volume}, Market Cap: {market_cap}, Avg: {average_price}")
             result = {
                 "lowest_price": lowest_price,
+                "highest_price": highest_price,
                 "total_volume": total_volume,
                 "market_cap": market_cap,
                 "average_price": average_price,
                 "raw_data": market_data
             }
             save_to_json(date_str, time_key, result)
-            print(f"[{time_key}] Lowest Price: {lowest_price}, Volume: {total_volume}, Market Cap: {market_cap}, Avg Price: {average_price}")
+            print(f"[{time_key}] Lowest Price: {lowest_price}, Highest Price: {highest_price}, Volume: {total_volume}, Market Cap: {market_cap}, Avg Price: {average_price}")
         else:
             print("[ERROR] 'pointsmarket' key missing in API response.")
     except requests.exceptions.RequestException as e:
@@ -61,26 +68,39 @@ def fetch_points_market():
         print(f"[ERROR] Unexpected Error: {e}")
 
 def save_to_json(date_str, time_key, result):
-    filename = f"Market_{date_str}.json"
-    print(f"[DEBUG] Saving Data to {filename}...")
+    filename = f"data/Market_{date_str}.json"
+    if bugs == True:
+        print(f"[DEBUG] Saving Data to {filename}...")
     if os.path.exists(filename):
-        print(f"[DEBUG] {filename} exists. Loading existing data...")
+        if bugs == True:
+            print(f"[DEBUG] {filename} exists. Loading existing data...")
         with open(filename, "r") as file:
             try:
                 data = json.load(file)
-                print("[DEBUG] Successfully loaded existing JSON data.")
+                if bugs == True:
+                    print("[DEBUG] Successfully loaded existing JSON data.")
             except json.JSONDecodeError:
                 print("[WARNING] JSON file was corrupted or empty. Creating a new structure.")
                 data = {}
     else:
-        print(f"[DEBUG] {filename} does not exist. Creating new JSON file.")
+        if bugs == True:
+            print(f"[DEBUG] {filename} does not exist. Creating new JSON file.")
         data = {}
-    print(f"[DEBUG] Adding new entry for {time_key}...")
+    if bugs == True:
+        print(f"[DEBUG] Adding new entry for {time_key}...")
     data[time_key] = result
     with open(filename, "w") as file:
         json.dump(data, file, indent=4)
-    print(f"[DEBUG] Successfully updated {filename}.")
-    
+    if bugs == True:
+        print(f"[DEBUG] Successfully updated {filename}.")
+
 if __name__ == "__main__" :
-    print("[DEBUG] Starting Market Tracking Script...")
+    parser = argparse.ArgumentParser(description="Points Market Tracker")
+    parser.add_argument("--debug", action="store_true", help="Enable debug output")
+    args = parser.parse_args()
+    global bugs
+    bugs = args.debug
+
+    if bugs == True:
+        print("[DEBUG] Starting Market Tracking Script...")
     fetch_points_market()

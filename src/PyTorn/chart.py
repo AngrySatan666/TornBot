@@ -1,4 +1,4 @@
-Version = [0,0,10] 
+Version = [0,0,10]
 State = "SCR"
 
 import os
@@ -34,7 +34,7 @@ def load_market_data():
                         low_price = values.get("lowest_price", None)
 
                         # Extract High Price from Raw Data (Find highest listing price)
-                        high_price = max([listing["cost"] for listing in values["raw_data"]["pointsmarket"].values()], default=None)
+                        high_price = values.get("highest_price", None)
 
                         # Extract Volume
                         volume = values.get("total_volume", None)
