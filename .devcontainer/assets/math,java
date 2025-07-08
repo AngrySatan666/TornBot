@@ -1,0 +1,15 @@
+import java.util.Scanner;
+
+public class CubeVolume {
+    public static void main(String[] args) {
+        Scanner scnr = new Scanner(System.in);
+        int sideLength;
+        int CubeVolume;
+
+        System.out.println("Enter the length of a side of the cube: ");
+        sideLength = scnr.nextInt();
+        CubeVolume = (sideLength * sideLength * sideLength);
+        System.out.println("The volume of the cube is: " + CubeVolume);
+        scnr.close();
+    }
+}
