@@ -7,10 +7,10 @@ from datetime import datetime
 import argparse
 
 _dir = os.path.dirname(os.path.abspath(__file__))
-POINTS_SCRIPT = os.path.join(_dir, "points2.py")
+POINTS_SCRIPT = os.path.join(_dir, "points.py")
 
 def run_script():
-    """Runs points2.py as a separate process."""
+    """Runs points.py as a separate process."""
     try:
         subprocess.run(["python", POINTS_SCRIPT], check=True)
     except subprocess.CalledProcessError as e:
